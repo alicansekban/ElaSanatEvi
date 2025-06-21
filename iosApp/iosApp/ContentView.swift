@@ -12,8 +12,9 @@ struct ComposeView: UIViewControllerRepresentable {
 
 struct ContentView: View {
     var body: some View {
-        ComposeView()
-                .ignoresSafeArea(.keyboard) // Compose has own keyboard handler
+        VStack {
+                   WebView(URL(string: "https://www.instagram.com/ela_sanatevi/?hl=en")!)
+               }
     }
 }
 
