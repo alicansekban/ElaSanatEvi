@@ -1,6 +1,7 @@
 package com.ela.sanatevi
 
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -16,7 +17,7 @@ fun App() {
     MaterialTheme {
         WebView(
             state = webViewState,
-            modifier = Modifier.fillMaxSize()
+            modifier = Modifier.fillMaxSize().systemBarsPadding()
         )
 
     }
