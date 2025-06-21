@@ -12,8 +12,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 @Preview
 fun App() {
 
-    val webViewState =
-        rememberWebViewState("https://www.instagram.com/ela_sanatevi/?hl=en")
+    val webViewState = rememberWebViewState("https://www.instagram.com/ela_sanatevi/?hl=en")
     MaterialTheme {
         WebView(
             state = webViewState,
